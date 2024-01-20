@@ -47,7 +47,11 @@ jobs:
     - name: Clone OpenWrt
       run: |
         ./scripts/00_init.sh openwrt
-
+        
+    - name: change sth
+      run: |
+        ./c.sh
+        
     - name: Get variable
       working-directory: ./openwrt
       id: var
